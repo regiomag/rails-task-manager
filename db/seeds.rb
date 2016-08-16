@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+gem install faker
+
+100.times do
+  Task.create(name: Faker::Name.name description: Faker::Name.name)
+end
