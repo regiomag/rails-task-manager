@@ -8,6 +8,6 @@
 
 gem install faker
 
-100.times do
+10.times do
   Task.create(name: Faker::Name.name description: Faker::Name.name)
 end
