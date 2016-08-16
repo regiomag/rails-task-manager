@@ -1,0 +1,20 @@
+<h1>All tasks</h1>
+
+<ul>
+  <% @tasks.each do |task| %>
+    <li>
+      <p>Title : <%= task.task%></p>
+      <p>Desription : <%= task.description%></p>
+      <p>To be done before : <%= task.jalon%></p>
+      <p>Is concerned : <%= task.manager%></p>
+      <%= link_to 'task page', "#{task.id}"%>
+      <%= link_to 'Edit', "#{task.id}/edit"%>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to 'Create a new task', "tasks/new"%>
+
+
+
+
